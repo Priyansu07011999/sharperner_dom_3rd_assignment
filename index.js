@@ -4,4 +4,7 @@ document.getElementById("main-heading").style.color = 'orange';
 document.getElementById("header").style.backgroundColor  = 'green';
 document.getElementById("header").style.borderBottom = "thick solid orange";
 document.getElementById('basket-heading').style.color ='green';
-document.getElementById('thanks').innerHTML = 'Please visit us again.';
+var thank = document.getElementById('thanks');
+var para = document.createElement('p');
+para.textContent = 'Please visit us again';
+thank.appendChild(para);
